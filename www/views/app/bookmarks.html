@@ -1,0 +1,31 @@
+<ion-view class="bookmarks-view">
+  <ion-nav-title>
+    <span>Used Voucher(s)</span>
+  </ion-nav-title>
+  <ion-content>
+    <ion-refresher pulling-text="Pull to refresh..." on-refresh="doRefresh()">
+    </ion-refresher>
+  <div ng-if="usedvoucher.status==false" class="card">
+    <div class="item item-text-wrap" ng-if="userdata">No Voucher Redeemed under {{userdata.display_name}}!
+    </div>
+    <div class="item item-text-wrap" ng-if="!userdata">
+      No Voucher Redeemed!
+    </div>
+  </div>
+  <div ng-if="usedvoucher.status==true">
+    <div ng-repeat="usedvouch in usedvoucher.data">
+      <div class="aestheticcolor card">
+        <div class="usedvoucherheadCls item item-divider">
+          {{usedvouch.deal_name}}
+        </div>
+        <div class="item item-text-wrap">
+          <strong>Purchased By :</strong> {{usedvouch.purchased_user_name}}<br>
+          <strong>Voucher Value :</strong> {{usedvouch.voucher_value}} AED<br>
+          <strong>Redeemed On :</strong> {{usedvouch.redeemed_date}}<br>
+          <strong>Voucher Code :</strong> {{usedvouch.voucher_code}}
+        </div>
+      </div>
+    </div><hr>
+  </div>
+  </ion-content>
+</ion-view>

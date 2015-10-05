@@ -1,0 +1,33 @@
+<ion-view class="layouts-view">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-title>
+    <span>Active Deals</span>
+  </ion-nav-title>
+  <ion-content>
+    <ion-refresher pulling-text="Pull to refresh..." on-refresh="doRefresh()">
+    </ion-refresher>
+  <div ng-if="activedeals.status==false" class="card">
+    <div class="item item-text-wrap" ng-if="userdata">
+      Currently No Active Deals for {{userdata.display_name}}!
+    </div>
+    <div class="item item-text-wrap" ng-if="!userdata">
+      No Active Deals! Kindly check back later!
+    </div>
+  </div>
+
+  <div ng-if="activedeals.status==true" ng-repeat="activedeal in activedeals.data">
+    <div class="list card">
+
+      <div class="item item-avatar usedvoucherheadCls">
+        <img ng-src="{{activedeal.deal_thumbnail}}" alt="Aesthetic Today | Online Spa Deals">
+        <h2>{{activedeal.post_title}}</h2>
+        <p class="ng-hide" ng-if="activedeal.deal_price">Price Starting From: {{activedeal.deal_price}} AED</p>
+        <p ng-if="activedeal.special_price">Price Starting From: {{activedeal.special_price}} AED</p>
+      </div>
+
+    </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,50 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content class="post-size-14px">
+    <ion-nav-bar class="bar app-top-bar">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left" class="main-menu" expose-aside-when="large">
+    <ion-content>
+      <ion-list>
+        <ion-item class="heading-item item item-avatar" nav-clear menu-close ui-sref="app.profile">
+          <div class="user-image-container">
+            <pre-img ratio="_1_1" helper-class="rounded-image">
+              <img class="user-image" ng-src="{{userdata.logo}}" src="img/logo.png" spinner-on-load>
+          	</pre-img>
+          </div>
+          <h2 class="greeting"><marquee scrollamount="2">Hi {{userdata.display_name}}!</marquee></h2>
+          <p class="message"><marquee scrollamount="2">{{userdata.special_location}}</marquee></p>
+        </ion-item>
+        <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.feeds-categories">
+          <i class="icon ion-arrow-graph-up-right"></i>
+          <h2 class="menu-text">Redeem Voucher</h2>
+        </ion-item>
+        <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.bookmarks">
+          <i class="icon ion-arrow-graph-down-left"></i>
+          <h2 class="menu-text">Used Vouchers</h2>
+        </ion-item>
+        <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.layouts">
+          <i class="icon ion-android-checkmark-circle"></i>
+          <h2 class="menu-text">Active Deals</h2>
+        </ion-item>
+        <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.aboutus">
+          <i class="icon ion-arrow-right-b"></i>
+          <h2 class="menu-text">About Us</h2>
+        </ion-item>
+        <ion-item class="item-icon-left" nav-clear menu-close ng-click="showLogOutMenu()">
+          <i class="icon ion-log-out"></i>
+          <h2 class="menu-text">Logout</h2>
+        </ion-item>
+
+    </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

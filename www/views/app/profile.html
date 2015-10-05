@@ -1,0 +1,52 @@
+<ion-view class="profile-view">
+  <ion-nav-title>
+    <span>Profile</span>
+  </ion-nav-title>
+  <ion-content>
+  <div class="item item-body">
+    <img class="full-image" ng-src="{{userdata.logo}}" src="img/logo.png">
+  </div>
+  <div class="text-center">
+    <div class="list profilePageTitleCls"><br>
+      <h3>{{userdata.display_name}}</h3>
+      <p>{{userdata.special_location}}</p>
+    </div>
+    <div class="card">
+      <div class="usedvoucherheadCls item item-divider">
+        Location
+      </div>
+      <div class="item item-text-wrap">
+        {{userdata.address_one}}
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="usedvoucherheadCls item item-divider">
+        Contact No
+      </div>
+      <div class="item item-text-wrap">
+        {{userdata.contact_phone}}
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="usedvoucherheadCls item item-divider">
+        Email
+      </div>
+      <div class="item item-text-wrap">
+        {{userdata.paypal_mail}}
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="usedvoucherheadCls item item-divider">
+        Merchant Percentage
+      </div>
+      <div class="item item-text-wrap">
+        {{userdata.merchant_percentage}} %
+      </div>
+    </div><br>
+
+    </div>
+  </ion-content>
+</ion-view>

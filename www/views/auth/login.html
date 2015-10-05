@@ -1,0 +1,32 @@
+<ion-view class="login-view auth-view" cache-view="false">
+  <ion-content scroll="false">
+
+    <div class="row">
+      <div class="col col-center">
+        <div class="card login-container" content-tabs tabsdata='tabsdata'>
+        <div style="margin:auto;text-align:center">
+          <img ng-src="img/logo.png">
+        </div>
+          <form name="login_form" class="" novalidate ng-cloak>
+                <div ng-if="isError" class="item assertive">
+                    {{error_Message}}
+                </div>
+                <div class="list">
+                  <label class="item item-input">
+                    <input type="email" placeholder="Email" name="user_email" ng-model="user.email" required>
+                  </label>
+                  <label class="item item-input" show-hide-container>
+                    <input type="password" placeholder="Password" name="user_password" ng-model="user.password" required show-hide-input>
+                  </label>
+                </div>
+            <div class="item item-body bottom-content">
+              <button type="submit" class="button button-positive button-block" ng-click="doLogIn()" ng-disabled="(login_form.user_email.$invalid || login_form.user_password.$invalid) ?  true : false"> 
+                Log In
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

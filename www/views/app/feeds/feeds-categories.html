@@ -1,0 +1,44 @@
+<ion-view class="feeds-categories-view">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-title>
+    <span>Redeem Voucher</span>
+  </ion-nav-title>
+  <ion-content>
+    <div class="text-center">
+        <a href="#/"><img src="img/logo.png"></a>
+      </div>
+    <form novalidate ng-cloak>
+      <ul class="list">
+        <h4 class="text-center appcolor">Quick Redeem</h4>
+        
+        <label class="item item-input">
+          <input class="text-center uppercase appcolor" ng-model="voucher.code" type="text" placeholder="Enter Voucher Code" required>
+        </label>
+        <strong ng-click="aestheticScanCode()" class="float-right button pull-right button-small button-positive usedvoucherheadCls">SCAN QR-CODE
+        </strong>
+      </ul>
+      <div class="bottom-content row">
+        <div class="col col-center">
+          <a ng-click="getvoucherdetails()" ng-disabled="voucher.code==undefined" class="login button button-block button-verifyVouc">
+            Verify
+          </a>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+  <!--<ion-content>
+    <div class="row categories-list">
+      <div ng-repeat="category in feeds_categories" class="col col-50">
+        <a class="feed-category" ui-sref="app.category-feeds({categoryId: (category.title | slugify)})">
+          <pre-img ratio="_1_1" helper-class="square-image">
+            <img class="category-image" ng-src="{{category.image}}" spinner-on-load>
+          </pre-img>
+          <div class="category-bg"></div>
+          <span class="category-title">{{category.title}}</span>
+        </a>
+      </div>
+    </div>
+  </ion-content>-->
+</ion-view>

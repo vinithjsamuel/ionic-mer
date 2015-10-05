@@ -1,0 +1,153 @@
+<ion-view class="category-feeds-view">
+<ion-nav-title>
+<span>{{categoryTitle}}</span>
+</ion-nav-title>
+<ion-content>
+  <form role="form">
+    <div class="card">
+      <div ng-if="!voucher.status" style="color:red" class="item item-text-wrap">
+        Status: {{voucher.message}}
+      </div>
+      <div ng-if="voucher.status" style="color:green" class="item item-text-wrap">
+        Status: {{voucher.message}}
+      </div>
+    </div>
+    <fieldset>
+
+      <div class="card">
+        <div class="item text-center voucInfopageTitleCls item-divider">
+          Deal Details
+        </div>
+      </div>
+      <div class="list voucInfopageContCls">
+          <div>
+            <span class="input-label">Deal Name</span>
+            <div class="card">
+              <div class="item item-text-wrap" ng-bind-html="voucherdetails.post_title"></div>
+            </div>
+          </div>
+
+          <div ng-if="voucherdetails.option">
+            <span class="input-label">Deal Option</span>
+            <div class="card">
+              <div class="item item-text-wrap" ng-bind-html="voucherdetails.option"></div>
+            </div>
+          </div>
+
+          <div ng-if="!voucherdetails.option">
+            <span class="input-label">Deal Option</span>
+            <div class="card">
+              <div class="item item-text-wrap">None</div>
+            </div>
+          </div>
+
+          <div>
+            <span class="input-label">Deal Price</span>
+            <div class="card">
+              <div class="item item-text-wrap">{{voucherdetails.deal_price}} AED</div>
+            </div>
+          </div>
+
+          <div>
+            <span class="input-label">Remaining Amount</span>
+            <div class="card">
+              <div class="item item-text-wrap">{{voucherdetails.remaining_amount}} AED</div>
+            </div>
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="item voucInfopageTitleCls text-center item-divider">
+          Merchant Info
+        </div>
+      </div>
+      <div class="list voucInfopageContCls">
+        <div>
+            <span class="input-label">Merchant Name</span>
+            <div class="card">
+              <div class="item item-text-wrap" ng-bind-html="voucherdetails.merchant_name"></div>
+            </div>
+        </div>
+
+        <div>
+            <span class="input-label">Merchant Email</span>
+            <div class="card">
+              <div class="item item-text-wrap" ng-bind-html="voucherdetails.merchant_email"></div>
+            </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="voucInfopageTitleCls item text-center item-divider">
+          Purchased User Info
+        </div>
+      </div>
+      <div class="list voucInfopageContCls">
+
+        <div>
+            <span class="input-label">Name</span>
+            <div class="card">
+              <div class="item item-text-wrap" ng-bind-html="voucherdetails.purchased_user_name"></div>
+            </div>
+        </div>
+
+        <div>
+            <span class="input-label">Date of Purchase</span>
+            <div class="card">
+              <div class="item item-text-wrap" ng-bind-html="voucherdetails.date_time"></div>
+            </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="voucInfopageTitleCls item text-center item-divider">
+          Voucher Details
+        </div>
+      </div>
+      <div class="list voucInfopageContCls">
+
+        <div>
+            <span class="input-label">Voucher Code</span>
+            <div class="card">
+              <div class="item item-text-wrap" ng-bind-html="voucherdetails.reff_code"></div>
+            </div>
+        </div>
+        <div>
+            <span class="input-label">Appointment Code</span>
+            <div class="card">
+              <div class="item item-text-wrap" ng-bind-html="voucherdetails.appointment_code"></div>
+            </div>
+        </div>
+        <div>
+            <span class="input-label">Voucher Value</span>
+            <div class="card">
+              <div class="item item-text-wrap">{{voucherdetails.voucher_price}} AED</div>
+            </div>
+        </div>
+        <div ng-if="voucherdetails.is_redeemed==1">
+            <span class="input-label">Redeemed Date</span>
+            <div class="card">
+              <div class="item item-text-wrap" ng-bind-html="voucherdetails.redeemed_date"></div>
+            </div>
+        </div>
+
+        <div ng-if="voucherdetails.is_exchanged==1">
+            <span class="input-label">Exchange Date</span>
+            <div class="card">
+              <div class="item item-text-wrap" ng-bind-html="voucherdetails.exchanged_date"></div>
+            </div>
+        </div>
+      </div>
+    </fieldset>
+    <br>
+
+    <div ng-if="voucher.status" class="bottom-content row">
+        <div class="col col-center">
+          <a ng-click="redeemvoucher()" class="button button-block button-verifyVouc">
+            Confirm Redeem
+          </a>
+        </div>
+    </div>
+  </form>
+</ion-content>
+</ion-view>
