@@ -69,7 +69,7 @@
 <gap:splash src="Default-Landscape@2x~ipad.png" gap:platform="ios" width="2048" height="1536" />
 
   <preference name="FadeSplashScreen" value="false"/>
-  <preference name="FadeSplashScreenDuration" value="4"/>
+  <preference name="FadeSplashScreenDuration" value="3"/>
   <preference name="ShowSplashScreenSpinner" value="false"/>
   <icon src="drawable-xhdpi-icon.png"/>
   <access origin="*"/>

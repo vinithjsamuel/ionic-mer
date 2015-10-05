@@ -1,5 +1,4 @@
-/*var app_url = 'http://localhost/karthi_code/at_live/ajax/merchant-ios/merchant_app_json.php';*/
-var app_url = 'http://dev.aesthetictoday.com/ajax/merchant-ios/merchant_app_json.php';
+var app_url = 'http://aesthetictoday.com/ajax/merchant-ios/merchant_app_json.php';
 
 angular.module('AesthetiTodayMerchant.controllers', [])
 
