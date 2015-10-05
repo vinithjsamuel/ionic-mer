@@ -17,60 +17,60 @@
   <allow-intent href="geo:*"/>
   <platform name="android">
     <allow-intent href="market:*"/>
-    <icon src="icon/drawable-ldpi-icon.png" density="ldpi"/>
-    <icon src="icon/drawable-mdpi-icon.png" density="mdpi"/>
-    <icon src="icon/drawable-hdpi-icon.png" density="hdpi"/>
-    <icon src="icon/drawable-xhdpi-icon.png" density="xhdpi"/>
-    <icon src="icon/drawable-xxhdpi-icon.png" density="xxhdpi"/>
-    <icon src="icon/drawable-xxxhdpi-icon.png" density="xxxhdpi"/>
-    <splash src="splash/drawable-land-ldpi-screen.png" density="land-ldpi"/>
-    <splash src="splash/drawable-land-mdpi-screen.png" density="land-mdpi"/>
-    <splash src="splash/drawable-land-hdpi-screen.png" density="land-hdpi"/>
-    <splash src="splash/drawable-land-xhdpi-screen.png" density="land-xhdpi"/>
-    <splash src="splash/drawable-land-xxhdpi-screen.png" density="land-xxhdpi"/>
-    <splash src="splash/drawable-land-xxxhdpi-screen.png" density="land-xxxhdpi"/>
-    <splash src="splash/drawable-port-ldpi-screen.png" density="port-ldpi"/>
-    <splash src="splash/drawable-port-mdpi-screen.png" density="port-mdpi"/>
-    <splash src="splash/drawable-port-hdpi-screen.png" density="port-hdpi"/>
-    <splash src="splash/drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
-    <splash src="splash/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
-    <splash src="splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
+    <icon src="drawable-ldpi-icon.png" density="ldpi"/>
+    <icon src="drawable-mdpi-icon.png" density="mdpi"/>
+    <icon src="drawable-hdpi-icon.png" density="hdpi"/>
+    <icon src="drawable-xhdpi-icon.png" density="xhdpi"/>
+    <icon src="drawable-xxhdpi-icon.png" density="xxhdpi"/>
+    <icon src="drawable-xxxhdpi-icon.png" density="xxxhdpi"/>
+    <splash src="drawable-land-ldpi-screen.png" density="land-ldpi"/>
+    <splash src="drawable-land-mdpi-screen.png" density="land-mdpi"/>
+    <splash src="drawable-land-hdpi-screen.png" density="land-hdpi"/>
+    <splash src="drawable-land-xhdpi-screen.png" density="land-xhdpi"/>
+    <splash src="drawable-land-xxhdpi-screen.png" density="land-xxhdpi"/>
+    <splash src="drawable-land-xxxhdpi-screen.png" density="land-xxxhdpi"/>
+    <splash src="drawable-port-ldpi-screen.png" density="port-ldpi"/>
+    <splash src="drawable-port-mdpi-screen.png" density="port-mdpi"/>
+    <splash src="drawable-port-hdpi-screen.png" density="port-hdpi"/>
+    <splash src="drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
+    <splash src="drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
+    <splash src="drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
   </platform>
   <platform name="ios">
     <allow-intent href="itms:*"/>
     <allow-intent href="itms-apps:*"/>
-    <icon src="icon/icon.png" width="57" height="57"/>
-    <icon src="icon/icon@2x.png" width="114" height="114"/>
-    <icon src="icon/icon-40.png" width="40" height="40"/>
-    <icon src="icon/icon-40@2x.png" width="80" height="80"/>
-    <icon src="icon/icon-50.png" width="50" height="50"/>
-    <icon src="icon/icon-50@2x.png" width="100" height="100"/>
-    <icon src="icon/icon-60.png" width="60" height="60"/>
-    <icon src="icon/icon-60@2x.png" width="120" height="120"/>
-    <icon src="icon/icon-60@3x.png" width="180" height="180"/>
-    <icon src="icon/icon-72.png" width="72" height="72"/>
-    <icon src="icon/icon-72@2x.png" width="144" height="144"/>
-    <icon src="icon/icon-76.png" width="76" height="76"/>
-    <icon src="icon/icon-76@2x.png" width="152" height="152"/>
-    <icon src="icon/icon-small.png" width="29" height="29"/>
-    <icon src="icon/icon-small@2x.png" width="58" height="58"/>
-    <icon src="icon/icon-small@3x.png" width="87" height="87"/>
-    <splash src="splash/Default-568h@2x~iphone.png" width="640" height="1136"/>
-    <splash src="splash/Default-667h.png" width="750" height="1334"/>
-    <splash src="splash/Default-736h.png" width="1242" height="2208"/>
-    <splash src="splash/Default-Landscape-736h.png" width="2208" height="1242"/>
-    <splash src="splash/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
-    <splash src="splash/Default-Landscape~ipad.png" width="1024" height="768"/>
-    <splash src="splash/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
-    <splash src="splash/Default-Portrait~ipad.png" width="768" height="1024"/>
-    <splash src="splash/Default@2x~iphone.png" width="640" height="960"/>
-    <splash src="splash/Default~iphone.png" width="320" height="480"/>
+    <icon src="icon.png" width="57" height="57"/>
+    <icon src="icon@2x.png" width="114" height="114"/>
+    <icon src="icon-40.png" width="40" height="40"/>
+    <icon src="icon-40@2x.png" width="80" height="80"/>
+    <icon src="icon-50.png" width="50" height="50"/>
+    <icon src="icon-50@2x.png" width="100" height="100"/>
+    <icon src="icon-60.png" width="60" height="60"/>
+    <icon src="icon-60@2x.png" width="120" height="120"/>
+    <icon src="icon-60@3x.png" width="180" height="180"/>
+    <icon src="icon-72.png" width="72" height="72"/>
+    <icon src="icon-72@2x.png" width="144" height="144"/>
+    <icon src="icon-76.png" width="76" height="76"/>
+    <icon src="icon-76@2x.png" width="152" height="152"/>
+    <icon src="icon-small.png" width="29" height="29"/>
+    <icon src="icon-small@2x.png" width="58" height="58"/>
+    <icon src="icon-small@3x.png" width="87" height="87"/>
+    <splash src="Default-568h@2x~iphone.png" width="640" height="1136"/>
+    <splash src="Default-667h.png" width="750" height="1334"/>
+    <splash src="Default-736h.png" width="1242" height="2208"/>
+    <splash src="Default-Landscape-736h.png" width="2208" height="1242"/>
+    <splash src="Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
+    <splash src="Default-Landscape~ipad.png" width="1024" height="768"/>
+    <splash src="Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
+    <splash src="Default-Portrait~ipad.png" width="768" height="1024"/>
+    <splash src="Default@2x~iphone.png" width="640" height="960"/>
+    <splash src="Default~iphone.png" width="320" height="480"/>
   </platform>
   <plugin name="org.apache.cordova.device" />
   <plugin name="org.apache.cordova.camera" />
   <plugin name="org.apache.cordova.splashscreen" />
   <plugin name="com.phonegap.plugins.barcodescanner" />
-  <icon src="icon/drawable-xhdpi-icon.png"/>
+  <icon src="drawable-xhdpi-icon.png"/>
   <preference name="SplashScreen" value="screen"/>
   <preference name="SplashScreenDelay" value="3000"/>
   <access origin="*"/>
