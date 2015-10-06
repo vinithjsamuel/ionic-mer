@@ -8440,3 +8440,9 @@ ion-side-menu .heading-item .item-content {
 .aboutusContentCls p,.item strong,.icon.iconSizeCls{color: #5893C8;}
 .voucInfopageTitleCls,.profilePageTitleCls h3,.profilePageTitleCls p{color: #4679BB;}
 .list.voucInfopageContCls span,.list.voucInfopageContCls input{color: #5893C8;}
+div#animate_bg_gif{width: 100%;
+	background: url(../img/bg-gif.gif) center center repeat;
+	height: 198px;
+    position: relative;
+    z-index: 4;
+}
