@@ -18,6 +18,7 @@
     <gap:plugin name="org.apache.cordova.dialogs" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="com.phonegap.plugins.barcodescanner" />
+    <gap:plugin name="com.ionic.keyboard" />
 <icon src="icon-small.png" gap:platform="ios" width="29" height="29" />
 <icon src="icon-40.png" gap:platform="ios" width="40" height="40" />
 <icon src="icon-50.png" gap:platform="ios" width="50" height="50" />
