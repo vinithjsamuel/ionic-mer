@@ -6,7 +6,7 @@
     >
   <name>AT | Merchant</name>
   <description>
-        Aesthetic Today Merchant's Application for a Quick Redemption
+        Aesthetic Today Merchant's Application for a Quick Redemption!
     </description>
   <author email="aesthetictoday@gmail.com" href="http://aesthetictoday.com">
         AT Team
@@ -27,12 +27,11 @@
     <!-- Plugins -->
 
     <!-- Core plugins -->
-    <gap:plugin name="org.apache.cordova.camera" />
-    <gap:plugin name="org.apache.cordova.device" />
-    <gap:plugin name="org.apache.cordova.dialogs" />
-    <gap:plugin name="org.apache.cordova.splashscreen" />
-    <gap:plugin name="com.phonegap.plugins.barcodescanner" />
-    <gap:plugin name="com.wizardlogic.cordova.ios_keyboard" version="2.0.0" />
+<gap:plugin name="com.phonegap.plugins.barcodescanner" source="pgb" version="2.2.0" />
+<gap:plugin name="org.apache.cordova.camera" source="pgb" version="0.3.2" />
+<gap:plugin name="org.apache.cordova.device" source="pgb" version="0.2.12" />
+<gap:plugin name="org.apache.cordova.dialogs" source="pgb" version="0.2.10" />
+<gap:plugin name="org.apache.cordova.splashscreen" source="pgb" version="0.3.4" />
 <icon src="icon-small.png" gap:platform="ios" width="29" height="29" />
 <icon src="icon-40.png" gap:platform="ios" width="40" height="40" />
 <icon src="icon-50.png" gap:platform="ios" width="50" height="50" />
@@ -69,7 +68,7 @@
 <gap:splash src="Default-Portrait@2x~ipad.png" gap:platform="ios" width="1536" height="2048" />
 <gap:splash src="Default-Landscape@2x~ipad.png" gap:platform="ios" width="2048" height="1536" />
 
-  <preference name="FadeSplashScreen" value="false"/>
+  <preference name="FadeSplashScreen" value="true"/>
   <preference name="ShowSplashScreenSpinner" value="false"/>
   <preference name="AutoHideSplashScreen" value="true" />
   <preference name="SplashScreenDelay" value="3000" />

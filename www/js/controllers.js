@@ -1,5 +1,4 @@
 var app_url = 'http://aesthetictoday.com/ajax/merchant-ios/merchant_app_json.php';
-
 angular.module('AesthetiTodayMerchant.controllers', [])
 
 .controller('AuthCtrl', function($scope, $ionicConfig,$rootScope, $state, $ionicLoading) {
