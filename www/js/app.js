@@ -13,17 +13,10 @@ angular.module('AesthetiTodayMerchant', [
   'angularMoment',
   'AesthetiTodayMerchant.controllers',
   'AesthetiTodayMerchant.directives',
-  /*'AesthetiTodayMerchant.filters',
-  'AesthetiTodayMerchant.services',
-  'AesthetiTodayMerchant.factories',
-  'AesthetiTodayMerchant.config',
-  'AesthetiTodayMerchant.views',*/
   'underscore',
-  'ngMap',
   'ngResource',
   'ngCordova',
-  'slugifier',
-  'ionic.contrib.ui.tinderCards'
+  'slugifier'
 ])
 
 .run(function($ionicPlatform, $rootScope, $ionicConfig, $timeout) {
@@ -118,15 +111,6 @@ angular.module('AesthetiTodayMerchant', [
     views: {
       'menuContent': {
         templateUrl: "views/app/miscellaneous/miscellaneous.html"
-      }
-    }
-  })
-
-  .state('app.maps', {
-    url: "/miscellaneous/maps",
-    views: {
-      'menuContent': {
-        templateUrl: "views/app/miscellaneous/maps.html"
       }
     }
   })
